@@ -11,7 +11,7 @@
     </thead>
     <tbody>
   <?php
-  while ($employee = $employee->fetch_assoc()) {
+  while ($employee = $employees->fetch_assoc()) {
     ?>
       <tr>
         <td><?php echo $employee['employee_id']; ?></td>
