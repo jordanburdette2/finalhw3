@@ -11,13 +11,13 @@
     </thead>
     <tbody>
 <?php
-while ($course = $courses->fetch_assoc()) {
+while ($job = $jobs->fetch_assoc()) {
 ?>
   <tr>
-    <td><?php echo $course['job_id']; ?></td>
-    <td><?php echo $course['job_number']; ?></td>
-    <td><?php echo $course['job_title']; ?></td>
-    <td><?php echo $course['start_date']; ?></td>
+    <td><?php echo $job['job_id']; ?></td>
+    <td><?php echo $job['job_number']; ?></td>
+    <td><?php echo $job['job_title']; ?></td>
+    <td><?php echo $job['start_date']; ?></td>
   </tr>
 <?php
 }
