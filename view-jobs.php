@@ -11,7 +11,7 @@
     </thead>
     <tbody>
 <?php
-while ($job = $jobs->fetch_assoc()) {
+while ($job = $job->fetch_assoc()) {
 ?>
   <tr>
     <td><?php echo $job['job_id']; ?></td>
