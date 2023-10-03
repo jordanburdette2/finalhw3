@@ -7,6 +7,7 @@
       <th>Job Number</th>
       <th>Job Title</th>
       <th>Job Start Date</th>
+      <th></th>
       </tr>
     </thead>
     <tbody>
@@ -19,7 +20,10 @@ while ($job = $jobs->fetch_assoc()) {
     <td><?php echo $job['job_title']; ?></td>
     <td><?php echo $job['start_date']; ?></td>
     <td>
-      <form method="post" action="jobs-of-employee.php">
+      
+    </td>
+    <td>
+      <form method="post" action="jobs-of-employees.php">
         <input type="hidden" name="jid" value="<?php echo $job['job_id']; ?>">
       <button type="submit" class="btn btn-primary">Division</button>
     </form>
