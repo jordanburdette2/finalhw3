@@ -4,7 +4,7 @@ require_once("model-jobs.php");
 
 $pageTitle = "Jobs";
 include "view-header.php";
-$courses = selectJobs();
+$job = selectJobs();
 include "view-jobs.php";
 include "view-footer.php";
 ?>
