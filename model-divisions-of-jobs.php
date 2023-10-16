@@ -2,7 +2,7 @@
 function selectDivisionsForJobs($did) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT j.job_id, job_number, job_title, start_date FROM `job` j join division d on j.job_id=d.job_id where d.job_id=?");
+        $stmt = $conn->prepare("SELECT division_id, employee_id, j.job_id, building, manager from division d join job j on d.job_id=j.job_id WHERE j.job_id=?;");
         $stmt->bind_param("i", $did);  
       $stmt->execute();
         $result = $stmt->get_result();
