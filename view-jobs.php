@@ -23,7 +23,7 @@ while ($job = $jobs->fetch_assoc()) {
       
     </td>
     <td>
-      <form method="post" action="jobs-of-employees.php">
+      <form method="post" action="divisions-for-jobs.php">
         <input type="hidden" name="jid" value="<?php echo $job['job_id']; ?>">
       <button type="submit" class="btn btn-primary">Division</button>
     </form>
