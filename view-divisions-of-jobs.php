@@ -3,10 +3,11 @@
   <table class="table">
     <thead>
       <tr>
-      <th>ID</th>
-      <th>Number</th>
-      <th>Job Title</th>
-        <th>Job Start Date</th>
+      <th>Division ID</th>
+      <th>Employee ID</th>
+      <th>Job ID</th>
+        <th>Building</th>
+        <th>Manager</th>
       </tr>
     </thead>
     <tbody>
@@ -14,10 +15,11 @@
 while ($division = $divisions->fetch_assoc()) {
 ?>
   <tr>
+    <td><?php echo $division['division_id']; ?></td>
+    <td><?php echo $division['employee_id']; ?></td>
     <td><?php echo $division['job_id']; ?></td>
-    <td><?php echo $division['job_number']; ?></td>
-    <td><?php echo $division['job_title']; ?></td>
-    <td><?php echo $division['start_date']; ?></td>
+    <td><?php echo $division['building']; ?></td>
+    <td><?php echo $division['manager']; ?></td>
   </tr>
 <?php
 }
