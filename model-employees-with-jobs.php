@@ -1,5 +1,5 @@
 <?php
-function selectEmployees() {
+function selectEmployeesWithJobs() {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT employee_id, employee_name, office_number FROM `employee`");
