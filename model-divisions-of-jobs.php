@@ -1,5 +1,5 @@
 <?php
-function selectDivisionsForJobs($jid) {
+function selectDivisionsOfJobs($jid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT division_id, employee_id, j.job_id, building, manager from division d join job j on d.job_id=j.job_id WHERE j.job_id=?;");
