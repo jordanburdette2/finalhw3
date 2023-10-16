@@ -4,7 +4,7 @@ require_once("model-divisons-for-jobs.php");
 
 $pageTitle = "Divisions for Jobs";
 include "view-header.php";
-$jobs = selectDivisionsForJobs($_GET['did']);
+$jobs = selectDivisionsForJobs($_POST['did']);
 include "model-divisons-for-jobs.php";
 include "view-footer.php";
 ?>
