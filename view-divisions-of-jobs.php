@@ -4,7 +4,6 @@
     <thead>
       <tr>
       <th>Division ID</th>
-      <th>Employee ID</th>
       <th>Job ID</th>
         <th>Building</th>
         <th>Manager</th>
@@ -16,7 +15,6 @@ while ($division = $divisions->fetch_assoc()) {
 ?>
   <tr>
     <td><?php echo $division['division_id']; ?></td>
-    <td><?php echo $division['employee_id']; ?></td>
     <td><?php echo $division['job_id']; ?></td>
     <td><?php echo $division['building']; ?></td>
     <td><?php echo $division['manager']; ?></td>
