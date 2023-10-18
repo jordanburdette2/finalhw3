@@ -15,7 +15,7 @@
     
   while ($job = $jobs->fetch_assoc()) {
     ?>
-      <li class="list-group-item"><?php echo $job['job_number']; ?> - <?php echo $job['start_date']; ?> - <?php echo $division['building']; ?></li>
+      <li class="list-group-item"><?php echo $job['job_number']; ?> - <?php echo $job['start_date'];  ?></li>
   <?php
   }
 ?>
