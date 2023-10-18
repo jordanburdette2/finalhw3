@@ -26,6 +26,9 @@
           <a class="nav-link" href="jobs.php">Jobs</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="company.php">Companies</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="employees-with-jobs.php">Employees with Jobs</a>
         </li>
       </ul>
