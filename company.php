@@ -4,7 +4,7 @@ require_once("model-companies.php");
 
 $pageTitle="Companies";
 include "view-header.php";
-$employees = selectCompanies();
+$companies = selectCompanies();
 include "view-companies.php";
 include "view-footer.php";
 ?>
