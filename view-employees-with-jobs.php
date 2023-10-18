@@ -13,7 +13,7 @@
   <?php
     $jobs = selectJobsOfEmployees($employee['employee_id']);
     
-  while ($employee = $employees->fetch_assoc()) {
+  while ($job = $jobs->fetch_assoc()) {
     ?>
       <li class="list-group-item"><?php echo $job['job_number']; ?> - <?php echo $job['start_date']; ?> - <?php echo $division['building']; ?></li>
   <?php
