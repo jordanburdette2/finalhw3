@@ -2,7 +2,7 @@
 function selectCompanies() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT employee_id, employee_name, office_number FROM `employee`");
+        $stmt = $conn->prepare("SELECT company_id, company_name, company FROM `company`");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
