@@ -14,6 +14,13 @@ if (isset($_POST['actionType'])) {
         echo '<div class="alert alert-danger" role="alert"> Error! </div>';
       }
       break;
+    case "Edit":
+      if (updateJob($_POST['jNumber'], $_POST['jTitle'], $_POST['jStart'], $_POST['jid'])) {
+        echo '<div class="alert alert-success" role="alert"> Job edited! </div>';
+      } else {
+        echo '<div class="alert alert-danger" role="alert"> Error! </div>';
+      }
+      break;
         case "Delete":
       if (deleteJob($_POST['jid'])) {
         echo '<div class="alert alert-success" role="alert"> Job Deleted! </div>';
