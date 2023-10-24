@@ -6,7 +6,7 @@ $pageTitle = "Jobs";
 include "view-header.php";
 
 if (isset($_POST['actionType'])) {
-  switch ($_PST['actionType']) {
+  switch ($_POST['actionType']) {
     case "Add":
       insertCourse($_POST['jNumber'], $_POST['jTitle'], $_POST['jStart']);
       break;
