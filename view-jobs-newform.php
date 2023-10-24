@@ -28,6 +28,7 @@
               <label for="jStart" class="form-label">Start Date</label>
               <input type="text" class="form-control" id="jStart" name="jStart">
             </div>
+              <input type="hidden" name="actionType" value="Add">
             <button type="submit" class="btn btn-primary">Save</button>
         </form>
       </div>
