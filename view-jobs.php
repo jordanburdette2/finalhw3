@@ -30,7 +30,11 @@ while ($job = $jobs->fetch_assoc()) {
     <td><?php echo $job['job_number']; ?></td>
     <td><?php echo $job['job_title']; ?></td>
     <td><?php echo $job['start_date']; ?></td>
+    
     <td>
+  <?php
+  include "view-jobs-editform.php";
+  ?>
     </td>
     
     <td>
