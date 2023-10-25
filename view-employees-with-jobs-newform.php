@@ -19,7 +19,7 @@
             <div class="mb-3">
               <label for="iid" class="form-label">Employee</label>
    <?php
-   $employeeList = selectEmployeeForInput();
+   $employeeList = selectEmployeesForInput();
    include "view-employee-input-list.php";
    ?>
             </div>
