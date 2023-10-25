@@ -17,7 +17,7 @@ function insertEmployee($empName, $offNum) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `job` (`employee_name`, `office_number`) VALUES (?, ?)");
-        $stmt->bind_param("sss", $empName, $offNum);
+        $stmt->bind_param("ss", $empName, $offNum);
         $success = $stmt->execute();
         $conn->close();
         return $success;
