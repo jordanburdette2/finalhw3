@@ -31,7 +31,7 @@ function updateEmployee($empName, $offNum, $eid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("UPDATE `employee` SET `employee_name` = ?, `office_number` = ? WHERE employee_id=?");
-        $stmt->bind_param("ssi", $empName, $offNum $eid);
+        $stmt->bind_param("ssi", $empName, $offNum, $eid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
