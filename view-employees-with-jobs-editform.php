@@ -18,8 +18,10 @@
         <form method="post" action="">
             <div class="mb-3">
               <label for="$iid<?php echo $job['division_id']; ?>" class="form-label">Employee</label>
-              <input type="text" class="form-control" id="jNumber<?php echo $job['job_id']; ?>" name="jNumber" value="<?php echo $job['job_number']; ?>">
-            
+     <?php
+     $employeeList = selectEmployeesForInput();
+     include "view-employee-input-list.php";
+     ?>
             </div>
              
             <div class="mb-3">
