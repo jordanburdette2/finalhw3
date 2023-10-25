@@ -21,6 +21,7 @@
               <input type="text" class="form-control" id="jNumber<?php echo $job['job_id']; ?>" name="jNumber" value="<?php echo $job['job_number']; ?>">
             
             </div>
+             
             <div class="mb-3">
               <label for="jTitle<?php echo $job['job_id']; ?>" class="form-label">Job Title</label>
               <input type="text" class="form-control" id="jTitle<?php echo $job['job_id']; ?>" name="jTitle" value="<?php echo $job['job_title']; ?>">
@@ -28,6 +29,10 @@
             <div class="mb-3">
               <label for="jStart<?php echo $job['job_id']; ?>" class="form-label">Start Date</label>
               <input type="text" class="form-control" id="jStart<?php echo $job['job_id']; ?>" name="jStart" value="<?php echo $job['start_date']; ?>">
+            </div>
+             <div class="mb-3">
+              <label for="officeNum<?php echo $job['job_id']; ?>" class="form-label">Office Number</label>
+              <input type="text" class="form-control" id="officeNum<?php echo $job['job_id']; ?>" name="officeNum" value="<?php echo $job['start_date']; ?>">
             </div>
               <input type="hidden" name="jid" value="<?php echo $job['job_id']; ?>">
               <input type="hidden" name="actionType" value="Edit">
