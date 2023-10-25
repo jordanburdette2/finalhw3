@@ -21,8 +21,8 @@
               <input type="text" class="form-control" id="iid" name="iid">
             </div>
             <div class="mb-3">
-              <label for="did" class="form-label">Division</label>
-              <input type="text" class="form-control" id="did" name="did">
+              <label for="jid" class="form-label">Job</label>
+              <input type="text" class="form-control" id="jid" name="jid">
             </div>
             <div class="mb-3">
               <label for="jTitle" class="form-label">Job Title</label>
