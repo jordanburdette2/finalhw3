@@ -21,7 +21,7 @@
               <input type="text" class="form-control" id="cName" name="cName">
             </div>
             <div class="mb-3">
-              <label for="cType" class="form-label">Company</label>
+              <label for="cType" class="form-label">Company Type</label>
               <input type="text" class="form-control" id="cType" name="cType">
             </div>
               <input type="hidden" name="actionType" value="Add">
