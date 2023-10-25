@@ -22,7 +22,7 @@
     </thead>
     <tbody>
 <?php
-while ($company = $company->fetch_assoc()) {
+while ($company = $companies->fetch_assoc()) {
 ?>
   <tr>
     <td><?php echo $company['company_id']; ?></td>
