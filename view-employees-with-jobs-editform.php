@@ -19,9 +19,10 @@
             <div class="mb-3">
               <label for="$iid<?php echo $job['division_id']; ?>" class="form-label">Employee</label>
      <?php
-     $employeeList = selectEmployeesForInput();
-     include "view-employee-input-list.php";
-     ?>
+   $employeeList = selectEmployeesForInput();
+   $selectedEmployee = $job['employee_id'];
+   include "view-employee-input-list.php";
+   ?>
             </div>
              
             <div class="mb-3">
