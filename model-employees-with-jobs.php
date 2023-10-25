@@ -28,6 +28,34 @@ function selectJobsOfEmployees($iid) {
     }
 }
 
+function selectEmployeesForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT employee_id, employee_name FROM `employee` order by employee_name");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+function selectJobsForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT job_id, job_number, job_title, start_date FROM `job` order by job_number");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
 function insertDivision($jid, $jobTitle, $startDate, $officeNum) {
     try {
         $conn = get_db_connection();
