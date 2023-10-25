@@ -17,12 +17,12 @@
       <div class="modal-body">
         <form method="post" action="">
             <div class="mb-3">
-              <label for="cName" class="form-label">Job Number</label>
-              <input type="text" class="form-control" id="jNumber" name="jNumber">
+              <label for="cName" class="form-label">Company Name</label>
+              <input type="text" class="form-control" id="cName" name="cName">
             </div>
             <div class="mb-3">
-              <label for="jType" class="form-label">Job Title</label>
-              <input type="text" class="form-control" id="jTitle" name="jTitle">
+              <label for="cType" class="form-label">Company</label>
+              <input type="text" class="form-control" id="cType" name="cType">
             </div>
               <input type="hidden" name="actionType" value="Add">
             <button type="submit" class="btn btn-primary">Save</button>
