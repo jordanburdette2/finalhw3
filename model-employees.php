@@ -27,7 +27,7 @@ function insertEmployee($empName, $offNum) {
     }
 }
 
-function updateEmployee($empName, $offNum $eid) {
+function updateEmployee($empName, $offNum, $eid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("UPDATE `employee` SET `employee_name` = ?, `office_number` = ? WHERE employee_id=?");
