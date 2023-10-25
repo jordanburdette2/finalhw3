@@ -18,7 +18,10 @@
         <form method="post" action="">
             <div class="mb-3">
               <label for="iid" class="form-label">Employee</label>
-              <input type="text" class="form-control" id="iid" name="iid">
+   <?php
+   $employeeList = selectEmployeeForInput();
+   include "view-employee-input-list.php";
+   ?>
             </div>
             <div class="mb-3">
               <label for="jid" class="form-label">Job</label>
