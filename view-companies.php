@@ -13,7 +13,7 @@
     <thead>
       <tr>
       <th>ID</th>
-      <th>Comapny Name</th>
+      <th>Company Name</th>
       <th>Company Type</th>
       <th></th>
         <th></th>
