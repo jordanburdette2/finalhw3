@@ -42,11 +42,11 @@ function insertDivision($jid, $jobTitle, $startDate, $officeNum) {
     }
 }
 
-function updateDivision($iid, $jid, $jobTitle, $startDate, $officeNum) {
+function updateDivision($iid, $jid, $jobTitle, $startDate, $officeNum, $did) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("UPDATE `job` SET `job_number` = ?, `job_title` = ?, `start_date` = ?, 'office_number' = ? WHERE job_id=?");
-        $stmt->bind_param("iisss", $iid, $jid, $jobTitle, $startDate, $officeNum);
+        $stmt = $conn->prepare("UPDATE `job` SET 'job_id' = ?, `job_number` = ?, `job_title` = ?, `start_date` = ?, 'office_number' = ? WHERE division_id=?");
+        $stmt->bind_param("iisssi", $iid, $jid, $jobTitle, $startDate, $officeNum, $did);
         $success = $stmt->execute();
         $conn->close();
         return $success;
