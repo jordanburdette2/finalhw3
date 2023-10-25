@@ -20,6 +20,7 @@
               <label for="iid" class="form-label">Employee</label>
    <?php
    $employeeList = selectEmployeesForInput();
+   $selectedEmployee = $job['employee_id'];
    include "view-employee-input-list.php";
    ?>
             </div>
