@@ -30,7 +30,7 @@ function insertCompany($cName, $cType) {
 function updateCompany($cName, $cType, $cid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("UPDATE `job` SET `company_name` = ?, `company_type` = ? WHERE company_id=?");
+        $stmt = $conn->prepare("UPDATE `company` SET `company_name` = ?, `company_type` = ? WHERE company_id=?");
         $stmt->bind_param("ssi", $cName, $cType, $cid);
         $success = $stmt->execute();
         $conn->close();
