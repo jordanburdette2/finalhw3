@@ -47,9 +47,7 @@ while ($company = $companies->fetch_assoc()) {
       </button>
     </form>
     </td>
-      <form method="post" action="company.php">
-        <input type="hidden" name="cid" value="<?php echo $company['company_id']; ?>">
-      <button type="submit" class="btn btn-primary">Companies</button>
+      
     </td>
   </tr>
 <?php
