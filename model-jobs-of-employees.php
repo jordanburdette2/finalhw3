@@ -13,4 +13,50 @@ function selectJobsOfEmployees($iid) {
         throw $e;
     }
 }
+
+function insertJobOfEmployee($empName, $jobNum, $jobTitle, $startDate, $offNum) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("INSERT INTO `job` (`job_number`, `job_title`, `start_date`) VALUES (?, ?, ?)");
+        $stmt->bind_param("sss", $jobNum, $jobTitle, $startDate);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+function updateJob($jobNum, $jobTitle, $startDate, $jid) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("UPDATE `job` SET `job_number` = ?, `job_title` = ?, `start_date` = ? WHERE job_id=?");
+        $stmt->bind_param("sssi", $jobNum, $jobTitle, $startDate, $jid);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+function deleteJob($jid) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("DELETE FROM job WHERE job_id=?");
+        $stmt->bind_param("i", $jid);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+?>
+
+
 ?>
