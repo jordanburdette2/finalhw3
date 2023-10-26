@@ -56,7 +56,7 @@ function selectJobsForInput() {
     }
 }
 
-function insertDivision($jid, $jobTitle, $startDate, $officeNum) {
+function insertDivision($jid, $jTitle, $jStart, $officeNum) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `job` ('job_id, `job_title`, `start_date`, 'office_number') VALUES (?, ?, ?, ?)");
@@ -70,7 +70,7 @@ function insertDivision($jid, $jobTitle, $startDate, $officeNum) {
     }
 }
 
-function updateDivision($iid, $jid, $jobTitle, $startDate, $officeNum, $did) {
+function updateDivision($iid, $jid, $jTitle, $jStart, $officeNum, $did) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("UPDATE `job` SET 'job_id' = ?, `job_number` = ?, `job_title` = ?, `start_date` = ?, 'office_number' = ? WHERE division_id=?");
