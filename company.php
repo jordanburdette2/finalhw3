@@ -31,7 +31,7 @@ if (isset($_POST['actionType'])) {
   }
 }
 
-$company = selectCompany();
+$companies = selectCompany();
 include "view-companies.php";
 include "view-footer.php";
 ?>
