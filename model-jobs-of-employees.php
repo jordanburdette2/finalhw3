@@ -14,7 +14,7 @@ function selectJobsOfEmployees($iid) {
     }
 }
 
-function insertJobOfEmployee($empName, $jobNum, $jobTitle, $startDate, $offNum) {
+function insertJobOfEmployee($jobNum, $jobTitle, $startDate) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `job` (`job_number`, `job_title`, `start_date`) VALUES (?, ?, ?)");
@@ -28,7 +28,7 @@ function insertJobOfEmployee($empName, $jobNum, $jobTitle, $startDate, $offNum) 
     }
 }
 
-function updateJob($jobNum, $jobTitle, $startDate, $jid) {
+function updateJobOfEmployee($jobNum, $jobTitle, $startDate, $jid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("UPDATE `job` SET `job_number` = ?, `job_title` = ?, `start_date` = ? WHERE job_id=?");
