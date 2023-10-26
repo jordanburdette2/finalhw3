@@ -42,7 +42,7 @@ function updateJobOfEmployee($jobNum, $jobTitle, $startDate, $jid) {
     }
 }
 
-function deleteJob($jid) {
+function deleteJobOfEmployee($jid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("DELETE FROM job WHERE job_id=?");
