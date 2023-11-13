@@ -1,6 +1,6 @@
 <?php
 require_once("util-db.php");
-require_once("model-jobs-of-employees.php");
+require_once("model/jobs-of-employees.php");
 
 $pageTitle = "Jobs of Employees";
 include "view-header.php";
