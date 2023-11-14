@@ -21,7 +21,7 @@
      <?php
    $employeeList = selectEmployeesForInput();
    $selectedEmployee = $division['job_id'];
-   include "view-employee-input-list.php";
+   include "employee-input-list.php";
    ?>
             </div>
              
