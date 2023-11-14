@@ -21,7 +21,7 @@
    <?php
    $employeeList = selectEmployeesForInput();
    $selectedEmployee = 0;
-   include "view-employee-input-list.php";
+   include "employee-input-list.php";
    ?>
             </div>
             <div class="mb-3">
