@@ -32,6 +32,6 @@ if (isset($_POST['actionType'])) {
 }
 
 $employees = selectEmployeesWithJobs();
-include "view-employees-with-jobs.php";
+include "view/employees-with-jobs/page.php";
 include "view-footer.php";
 ?>
