@@ -4,7 +4,7 @@
   </div>
   <div class="col-auto">
 <?php
-include "view-employees-with-jobs-newform.php";
+include "new-form.php";
 ?>
   </div>
 </div>
@@ -28,7 +28,7 @@ while ($employee = $employees->fetch_assoc()) {
       </div>
       <div class="col-auto">
 <?php
-include "view-employees-with-jobs-editform.php";
+include "edit-form.php";
 ?>
       </div>
       <div class="col-auto">
