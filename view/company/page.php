@@ -4,7 +4,7 @@
     </div>
     <div class="col-auto">
   <?php
-  include "view-company-newform.php";
+  include "new-form.php";
   ?>
     </div>
 </div>
@@ -31,7 +31,7 @@ while ($company = $companies->fetch_assoc()) {
     
     <td>
   <?php
-  include "view-company-editform.php";
+  include "edit-form.php";
   ?>
     </td>
     
