@@ -4,9 +4,13 @@
   <canvas id="myChart"></canvas>
 </div>
 
+<div><canvas class="zdog-canvas" width="240" height="240"></canvas></div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
+<script src="zdog-demo.js"></script>
 
 <script>
   const ctx = document.getElementById('myChart');
@@ -75,6 +79,28 @@ swal({
     swal.stopLoading();
     swal.close();
   }
+});
+
+
+new Zdog.Ellipse({
+  addTo: illo,
+  diameter: 80,
+  // position closer
+  translate: { z: 40 },
+  stroke: 20,
+  color: '#636',
+});
+
+
+new Zdog.Rect({
+  addTo: illo,
+  width: 80,
+  height: 80,
+  // position further back
+  translate: { z: -40 },
+  stroke: 12,
+  color: '#E62',
+  fill: true,
 });
 
 </script>
