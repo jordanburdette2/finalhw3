@@ -134,7 +134,7 @@ new Zdog.Rect({
   fill: true,
 });
 
-  Highcharts.chart('container', {
+new Highcharts.chart('container', {
     chart: {
         type: 'column'
     },
