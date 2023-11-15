@@ -1,6 +1,6 @@
 <?php
 require_once("model/connection.php");
-require_once("model/employees-with-jobs.php");
+require_once("model/employees-with-jobs-db.php");
 
 $pageTitle = "Employees with Jobs";
 include "view/header.php";
