@@ -86,6 +86,16 @@ let illo = new Zdog.Illustration({
   element: '.zdog-canvas',
 });
 
+function animate() {
+  // rotate illo each frame
+  illo.rotate.y += 0.03;
+  illo.updateRenderGraph();
+  // animate next frame
+  requestAnimationFrame( animate );
+}
+// start animation
+animate();
+
 // add circle
 new Zdog.Ellipse({
   addTo: illo,
