@@ -9,7 +9,6 @@
 
 // Example 1
 <script>
-  <div>
   const ctx = document.getElementById('myChart');
 
   new Chart(ctx, {
@@ -36,13 +35,10 @@ echo "'" . $employee['employee_name'] . "', ";
     ]
 },
   });
-</div>
 
-  <div>
   swal({
   text: "Hello world!",
 });
-  </div>
 </script>
     
     
