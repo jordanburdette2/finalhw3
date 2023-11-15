@@ -2,7 +2,7 @@
 require_once("model/connection.php");
 require_once("model/jobs-db.php");
 
-$pageTitle = "Jobss";
+$pageTitle = "Jobs";
 include "view/header.php";
 
 if (isset($_POST['actionType'])) {
