@@ -32,7 +32,7 @@
           <a class="nav-link" href="employees-with-jobs.php">Employees with Jobs</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="employees-chart.php">Employee Chart</a>
+          <a class="nav-link" href="employee-chart.php">Employee Chart</a>
         </li>
       </ul>
     </div>
