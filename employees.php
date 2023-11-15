@@ -1,9 +1,9 @@
 <?php
 require_once("util-db.php");
-require_once("model-employees.php");
+require_once("model/employees.php");
 
 $pageTitle="Employees";
-include "view-header.php";
+include "view/header.php";
 
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
@@ -32,6 +32,6 @@ if (isset($_POST['actionType'])) {
 }
 
 $employees = selectEmployees();
-include "view-employees.php";
-include "view-footer.php";
+include "view/employees.php";
+include "view/footer.php";
 ?>
