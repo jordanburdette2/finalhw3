@@ -1,6 +1,6 @@
 <?php
 require_once("model/connection.php");
-require_once("model/employees.php");
+require_once("model/employees-db.php");
 
 $pageTitle="Employees";
 include "view/header.php";
