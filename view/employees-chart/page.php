@@ -134,53 +134,53 @@ new Zdog.Rect({
   fill: true,
 });
 
-new Highcharts.chart('container', {
-    chart: {
-        type: 'column'
-    },
-    title: {
-        text: 'Corn vs wheat estimated production for 2020',
-        align: 'left'
-    },
-    subtitle: {
-        text:
-            'Source: <a target="_blank" ' +
-            'href="https://www.indexmundi.com/agriculture/?commodity=corn">indexmundi</a>',
-        align: 'left'
-    },
-    xAxis: {
-        categories: ['USA', 'China', 'Brazil', 'EU', 'India', 'Russia'],
-        crosshair: true,
-        accessibility: {
-            description: 'Countries'
-        }
-    },
-    yAxis: {
-        min: 0,
-        title: {
-            text: '1000 metric tons (MT)'
-        }
-    },
-    tooltip: {
-        valueSuffix: ' (1000 MT)'
-    },
-    plotOptions: {
-        column: {
-            pointPadding: 0.2,
-            borderWidth: 0
-        }
-    },
-    series: [
-        {
-            name: 'Corn',
-            data: [406292, 260000, 107000, 68300, 27500, 14500]
-        },
-        {
-            name: 'Wheat',
-            data: [51086, 136000, 5500, 141000, 107180, 77000]
-        }
-    ]
-});
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D3.js Bar Chart</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <style>
+    /* Add any necessary styles here */
+    /* For example, you can style the bars with different colors */
+    rect {
+      fill: steelblue;
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+    // Your data (replace this with your own data)
+    var data = [10, 25, 15, 30, 20];
+
+    // Set up the SVG canvas
+    var svg = d3.select("body")
+      .append("svg")
+      .attr("width", 400)
+      .attr("height", 200);
+
+    // Create bars
+    svg.selectAll("rect")
+      .data(data)
+      .enter()
+      .append("rect")
+      .attr("x", function(d, i) {
+        return i * 80; // Bar width + gap
+      })
+      .attr("y", function(d) {
+        return 200 - d; // Invert the y-axis
+      })
+      .attr("width", 75) // Bar width
+      .attr("height", function(d) {
+        return d;
+      })
+      .attr("fill", "steelblue"); // Bar color
+  </script>
+
+</body>
+</html>
 
 </script>
 
