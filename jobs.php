@@ -1,6 +1,6 @@
 <?php
-require_once("util-db.php");
-require_once("model/jobs.php");
+require_once("connection.php");
+require_once("model/jobs-db.php");
 
 $pageTitle = "Jobs";
 include "view/header.php";
@@ -32,6 +32,6 @@ if (isset($_POST['actionType'])) {
 }
 
 $jobs = selectJobs();
-include "view/jobs.php";
+include "view/jobs/page.php";
 include "view/footer.php";
 ?>
