@@ -17,7 +17,7 @@
       <div class="modal-body">
         <form method="post" action="">
             <div class="mb-3">
-              <label for="$did<?php echo $division['job_id']; ?>" class="form-label">Employee</label>
+              <label for="$did<?php echo $division['division_id']; ?>" class="form-label">Employee</label>
      <?php
    $employeeList = selectEmployeesForInput();
    $selectedEmployee = $job['job_id'];
