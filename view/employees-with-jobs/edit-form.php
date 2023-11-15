@@ -20,7 +20,7 @@
               <label for="$did<?php echo $division['job_id']; ?>" class="form-label">Employee</label>
      <?php
    $employeeList = selectEmployeesForInput();
-   $selectedEmployee = $division['job_id'];
+   $selectedEmployee = $job['job_id'];
    include "employee-input-list.php";
    ?>
             </div>
