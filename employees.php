@@ -1,5 +1,5 @@
 <?php
-require_once("util-db.php");
+require_once("model/connection.php");
 require_once("model/employees.php");
 
 $pageTitle="Employees";
