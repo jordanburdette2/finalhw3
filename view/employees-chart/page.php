@@ -4,10 +4,9 @@
   <canvas id="myChart"></canvas>
 </div>
 
-// Sources
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-// Example 1
 <script>
   const ctx = document.getElementById('myChart');
 
@@ -36,9 +35,6 @@ echo "'" . $employee['employee_name'] . "', ";
 },
   });
 
-  swal({
-  text: "Hello world!",
-});
 </script>
     
     
