@@ -1,9 +1,9 @@
 <?php
 require_once("util-db.php");
-require_once("model-companies.php");
+require_once("model/companies-db.php");
 
 $pageTitle = "Companies";
-include "view-header.php";
+include "view/header.php";
 
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
@@ -32,6 +32,6 @@ if (isset($_POST['actionType'])) {
 }
 
 $companies = selectCompany();
-include "view-companies.php";
-include "view-footer.php";
+include "view/companies.php";
+include "view/footer.php";
 ?>
