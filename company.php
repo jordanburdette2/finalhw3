@@ -1,5 +1,5 @@
 <?php
-require_once("util-db.php");
+require_once("model/connection.php");
 require_once("model/companies-db.php");
 
 $pageTitle = "Companies";
@@ -32,6 +32,6 @@ if (isset($_POST['actionType'])) {
 }
 
 $companies = selectCompany();
-include "view/companies.php";
+include "view/company/page.php";
 include "view/footer.php";
 ?>
