@@ -1,4 +1,5 @@
-<h1>Employees chart</h1>
+<head>
+  <h1>Employees chart</h1>
 <h1>Chart.js</h1>
 <div>
   <canvas id="myChart"></canvas>
@@ -9,9 +10,11 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
      crossorigin=""/>
+</head>
 
+<body>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
 <script src="zdog-demo.js"></script>
@@ -141,5 +144,7 @@ new Zdog.Rect({
     </div>
 
 </script>
+  
+</body>
     
     
