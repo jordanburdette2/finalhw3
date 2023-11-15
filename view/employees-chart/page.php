@@ -134,7 +134,10 @@ new Zdog.Rect({
   fill: true,
 });
 
-<!DOCTYPE html>
+
+</script>
+
+  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -181,9 +184,6 @@ new Zdog.Rect({
 
 </body>
 </html>
-
-</script>
-
   
 </body>
     
