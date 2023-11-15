@@ -6,6 +6,7 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 <script>
   const ctx = document.getElementById('myChart');
@@ -34,6 +35,13 @@ echo "'" . $employee['employee_name'] . "', ";
     ]
 },
   });
+
+  swal("Write something here:", {
+  content: "input",
+})
+.then((value) => {
+  swal(`You typed: ${value}`);
+});
 
 </script>
     
