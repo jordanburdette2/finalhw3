@@ -15,6 +15,7 @@
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
 <script src="zdog-demo.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
 
 
 <script>
@@ -133,25 +134,56 @@ new Zdog.Rect({
   fill: true,
 });
 
+  Highcharts.chart('container', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Corn vs wheat estimated production for 2020',
+        align: 'left'
+    },
+    subtitle: {
+        text:
+            'Source: <a target="_blank" ' +
+            'href="https://www.indexmundi.com/agriculture/?commodity=corn">indexmundi</a>',
+        align: 'left'
+    },
+    xAxis: {
+        categories: ['USA', 'China', 'Brazil', 'EU', 'India', 'Russia'],
+        crosshair: true,
+        accessibility: {
+            description: 'Countries'
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: '1000 metric tons (MT)'
+        }
+    },
+    tooltip: {
+        valueSuffix: ' (1000 MT)'
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [
+        {
+            name: 'Corn',
+            data: [406292, 260000, 107000, 68300, 27500, 14500]
+        },
+        {
+            name: 'Wheat',
+            data: [51086, 136000, 5500, 141000, 107180, 77000]
+        }
+    ]
+});
 
 </script>
 
-<script>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-     crossorigin=""/>
-
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-       
-</script>
-  
-  <div id="map">
-    var map = L.map('map').setView([51.505, -0.09], 13);
-  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-}).addTo(map);
-    </div>
   
 </body>
     
