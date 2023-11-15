@@ -1,6 +1,5 @@
 <head>
   <h1>Employees chart</h1>
-<h1>Chart.js</h1>
 <div>
   <canvas id="myChart"></canvas>
 </div>
